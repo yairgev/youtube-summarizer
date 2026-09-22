@@ -1,9 +1,12 @@
-# YouTube Video Summarizer - Docker Container
+ # YouTube Video Summarizer - Docker Container
 
 FROM python:3.11-slim
 
-# התקן FFmpeg
-RUN apt-get update && apt-get install -y ffmpeg && rm -rf /var/lib/apt/lists/*
+# התקן FFmpeg וספריות נדרשות
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends ffmpeg && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 # כדיר עבודה
 WORKDIR /app
@@ -14,7 +17,8 @@ COPY app.py .
 COPY index.html .
 
 # התקן Python ספריות
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
 
 # יצור תיקיות
 RUN mkdir -p summarized_videos
