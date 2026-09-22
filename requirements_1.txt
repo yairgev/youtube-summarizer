@@ -1,0 +1,7 @@
+Flask==3.0.3
+Flask-CORS==4.0.0
+yt-dlp==2024.12.2
+openai-whisper==20231214
+moviepy==1.0.3
+anthropic==0.37.0
+python-dotenv==1.0.1
