@@ -1,8 +1,0 @@
-Flask==3.0.3
-Flask-CORS==4.0.0
-yt-dlp>=2024.12.23
-openai-whisper
-anthropic
-python-dotenv
-gunicorn
-numpy
