@@ -1,7 +1,0 @@
-Flask==3.0.3
-Flask-CORS==4.0.0
-yt-dlp
-openai-whisper
-moviepy
-anthropic
-python-dotenv
