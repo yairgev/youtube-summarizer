@@ -5,3 +5,4 @@ openai-whisper
 moviepy
 anthropic
 python-dotenv
+gunicorn
