@@ -3,6 +3,8 @@ Flask-CORS==4.0.0
 yt-dlp
 openai-whisper
 moviepy
+imageio-ffmpeg
+numpy
 anthropic
 python-dotenv
 gunicorn
